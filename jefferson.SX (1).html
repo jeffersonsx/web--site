@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>RAPNEWS</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    
+
+    
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Noticias</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Lançamentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sociedae</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Musicas do momento</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="bd-placeholder-img" width="100%" height="100%" img src="https://miro.medium.com/max/1400/1*7v4y-Z56HOZqFM7fyu6Gxw.jpeg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>SOMOS A REPRESENTATIVIDADE NA PALAVRA</h1>
+            <p></p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="bd-placeholder-img" width="100%" height="100%" img src="https://miro.medium.com/max/1400/1*7v4y-Z56HOZqFM7fyu6Gxw.jpeg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>SOMOS A REPRESENTATIVIDADE NA PALAVRA.</h1>
+            <p></p>
+           
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="bd-placeholder-img" width="100%" height="100%" img src="https://miro.medium.com/max/1400/1*7v4y-Z56HOZqFM7fyu6Gxw.jpeg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>SOMOS A REPRESENTATIVIDADE NA PALAVRA.</h1>
+            <p></p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" img src="https://i.scdn.co/image/ab67706c0000bebbe79225260030d29be4ff3ae4" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+
+        <h2 class="fw-normal">MAJOR RD </h2>
+        <p>Musicas do ultimo albúm: Troféu</p>
+        <p><a class="btn btn-secondary" href="#">Clique aqui &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" img src="https://e.snmc.io/i/600/s/3644b26df16288ee204ccee340964fed/8446627/matue-maquina-do-tempo-Cover-Art.jpg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+
+        <h2 class="fw-normal">MATUÊ</h2>
+        <p>Musicas do ultimo albúm: maquina do tempo </p>
+        <p><a class="btn btn-secondary" href="#">Clique aqui &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" img src="https://i.scdn.co/image/ab67616d0000b2734a20a636987f43fd6753d556" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+
+        <h2 class="fw-normal">Djonga</h2>
+        <p>Musicas do ultimo albúm : O dono do lugar
+          
+          
+    </p>
+        <p><a class="btn btn-secondary" href="#">Clique aqui &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Major RD <span class="text-muted">O rei do drill ?.</span></h2>
+        <p class="lead">scido em Campo Grande bairro da zona oeste do Rio de Janeiro, Rodrigo ou mais conhecido Major Rd, ganhou esse nome artístico pegando como inspiração o personagem Major do filme Green Street Hooligans, após se envolver em uma briga de escola, Rodrigo passou a se denominar como Major RD.
+
+          Aos poucos Major, foi ganhando seu espaço por conta de sua lírica incomparável e seu flow agressivo. Se tornando assim, um dos principais nomes do atual cenário do rap nacional.
+          
+          Em sua infância, seus pais Cristina e Rona, foram sua principal inspiração e influenciadores, tanto na sua formação ideológica, quanto no seu estilo musical..</p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" img src="https://images.suamusica.com.br/wfL0P_rC6EPSE-c01nKqJXJTmEM=/500x500/filters:format(webp)/587538/3513866/cd_cover.jpg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></img>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Matuê. <span class="text-muted">O maior da cena do trap br ?</span></h2>
+        <p class="lead">Matheus Brasileiro Aguiar (Fortaleza, 11 de outubro de 1993), mais conhecido como Matuê, é um rapper, trapper, cantor e compositor brasileiro. Ficou conhecido com os singles "Anos Luz", lançado em 2017 e Banco, lançado em 2019. É considerado um símbolo do trap brasileiro..</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" img src="https://lyrnow.com/img_id/209968.jpg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></img>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Djonga. <span class="text-muted">por muitos  o maior depois de racionais</span></h2>
+        <p class="lead">Gustavo Pereira Marques, mais conhecido pelo nome artístico Djonga, é um rapper, escritor e compositor brasileiro. Considerado um dos nomes mais influentes do rap na atualidade, o artista chama a atenção por sua lírica afiada, marginalizada e agressiva e por suas fortes críticas sociais nas letras.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" img src="https://f.i.uol.com.br/fotografia/2022/10/11/16655279026345f05ee88bc_1665527902_3x4_md.jpg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <!DOCTYPE html>
+    <html>
+    
+    <head>
+    <title>--Formulário Contato--</title>
+    <meta charset="utf-8" />
+    <!--   <link href="ContatoEstilo.css" rel="stylesheet" media="all" />
+        <script src="JavaScript1.js"></script>-->
+    </head>
+    
+    <body>
+    <form name="meu_form">
+    
+      <h1>Entre em contato</h1>
+    
+      <input type="text" id="nomeid" placeholder="nome" required="required" name="nome" />
+      <label for="nome">Nome</label>
+    
+      <input type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
+      <label for="fone">Fone</label>
+    
+      <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
+      <label for="email">Email</label>
+    
+      <textarea placeholder="Deixe sua opnião"></textarea>
+    
+      <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+    </form>
+  </footer>
+</form>
+
+
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
